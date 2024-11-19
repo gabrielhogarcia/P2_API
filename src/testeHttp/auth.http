@@ -1,0 +1,9 @@
+@url = https://8080-matheusmora-atividadefi-k5c9t7rpt83.ws-us116.gitpod.io
+
+POST {{url}}/auth
+Content-Type: application/json
+
+{
+    "nomeDeUsuario": "admin",
+    "senha": "admin"
+}

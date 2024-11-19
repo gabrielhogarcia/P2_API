@@ -1,0 +1,33 @@
+@url = https://8080-matheusmora-atividadefi-k5c9t7rpt83.ws-us116.gitpod.io
+
+@token =
+
+###
+GET {{url}}/colaboradores
+Authorization: Bearer {{token}}
+
+###
+GET {{url}}/colaboradores/1
+Authorization: Bearer {{token}}
+
+###
+POST {{url}}/colaboradores
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "nome": "Nome OPK"
+}
+
+###
+PUT {{url}}/colaboradores/1
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "titulo": "Título ABC  - Diferente"
+}
+
+###
+DELETE {{url}}/colaboradores/1
+Authorization: Bearer {{token}}
